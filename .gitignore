@@ -1,0 +1,53 @@
+# Ignore the virtual environment
+venv/
+
+# Ignore Python bytecode
+*.pyc
+__pycache__/
+
+# Ignore Django migration files
+*/migrations/*.py
+!*/migrations/__init__.py
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE specific files
+.idea/
+.vscode/
+
+# Ignore compiled code
+*.pyo
+*.pyd
+*.so
+
+# Ignore test coverage results
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+
+# Ignore the main config file
+config.ini
+
+# Ignore virtual environment
+.env
+env/
+
+# Ignore pip files
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignore build files
+build/
+dist/
+*.egg-info/
+
+# Ignore other files
+*.log
+*.pot
+*.mo
+*.swp
+
