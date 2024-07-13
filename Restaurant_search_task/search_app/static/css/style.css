@@ -1,0 +1,136 @@
+/* style.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #333;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    background-color: #4CAF50;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+form {
+    margin-bottom: 2rem;
+}
+
+form input[type="text"] {
+    padding: 0.5rem;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Search results styles */
+.results {
+    margin-top: 1rem;
+}
+
+.restaurant {
+    background-color: white;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.restaurant h3 {
+    margin: 0 0 0.5rem 0;
+    color: #4CAF50;
+}
+
+.restaurant p {
+    margin: 0.5rem 0;
+}
+
+.restaurant ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.restaurant ul li {
+    margin: 0.2rem 0;
+}
+
+.results {
+    margin-top: 20px;
+}
+
+.restaurant {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.restaurant h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.restaurant p {
+    margin: 5px 0;
+}
+
+.restaurant-details {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %} Home - Foodie.com{% endblock %}
+
+{% block content %}
+    <h1>Welcome Foodies</h1>
+    
+    <p>Find your PERFECT place to eat</p>
+    
+    <!-- Example of including a link to the search page -->
+    <a href="{% url 'search_results' %}">Go to Search</a>
+    
+    <!-- Additional content as needed -->
+{% endblock %}
