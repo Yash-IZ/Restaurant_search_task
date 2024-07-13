@@ -15,10 +15,17 @@ def search_view(request):
         
         # Combine all Q objects with OR operator using functools.reduce
         import functools
-        results = Restaurant.objects.filter(functools.reduce(lambda a, b: a | b, queries))
+        combined_query = functools.reduce(lambda a, b: a | b, queries)
+        
+        # Fetch results and count them
+        results = Restaurant.objects.filter(combined_query)
+        number_of_results = results.count()
+    else:
+        number_of_results = 0
     
     context = {
         'query': query,
         'results': results,
+        'number_of_results': number_of_results,  # Pass number of results to template
     }
     return render(request, 'search_app/search_result.html', context)

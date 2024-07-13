@@ -5,11 +5,11 @@
 {% block content %}
     <h2>Search Results</h2>
     <form method="get" action="{% url 'search_results' %}">
-        <input type="text" name="q" placeholder="Search for restaurants..." value="{{ request.GET.q }}">
+        <input type="text" name="q" placeholder="Search for restaurants..." value="{{ query }}">
         <button type="submit">Search</button>
     </form>
     {% if query %}
-        <p>Showing results for "{{ query }}":</p>
+        <p>Showing {{ number_of_results }} results for "{{ query }}":</p>
         {% if results %}
             <div class="results">
                 {% for restaurant in results %}
@@ -26,10 +26,10 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {% for key, value in restaurant.items.items %}
+                                    {% for item, price in restaurant.items.items %}
                                         <tr>
-                                            <td>{{ key }}</td>
-                                            <td>{{ value }}</td>
+                                            <td>{{ item }}</td>
+                                            <td>{{ price }}</td>
                                         </tr>
                                     {% endfor %}
                                 </tbody>
